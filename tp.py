@@ -15,7 +15,16 @@ elif "p" or "q" in proposicion:
     print(variable)
 
 if "and" in proposicion:
-    pass
+    if variable ==1:
+        if "p" in proposicion:
+            if "not p" in proposicion:
+                p=False
+
+        elif "q" in proposicion:
+            if "not q" in proposicion:
+                q=False
+
+
 elif "or" in proposicion:
     pass
 elif "not" in proposicion:
