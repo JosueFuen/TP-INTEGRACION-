@@ -14,4 +14,12 @@ elif "p" or "q" in proposicion:
     variable=1
     print(variable)
 
-    
+if "and" in proposicion:
+    pass
+elif "or" in proposicion:
+    pass
+elif "not" in proposicion:
+    pass
+elif "=>" in proposicion:
+    pass
+
