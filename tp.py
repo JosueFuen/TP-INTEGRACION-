@@ -19,6 +19,7 @@ elif "p" or "q" in proposicion:
     variables = 1
     print(variables)
     print("Se detecto una variable.")
+
 if "and" in proposicion:
     if variables ==1:
         if "p" in proposicion:
