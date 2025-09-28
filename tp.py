@@ -1,6 +1,4 @@
 variables=0
-p=True
-q=True
 
 print("Operadores soportados:")
 print("  Conjunción (∧): and")
