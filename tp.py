@@ -1,21 +1,26 @@
-variables=0
+variables = 0
+proposicion = ""
+print(f'\nOperadores soportados:'
+      f'\nConjunción (∧): and'
+      f'\nDisyunción (∨): or'
+      f'\nNegación (¬): not'
+      f'\nImplicación (⇒): =>"'
+      f'\nVariables aceptadas: p, q'
+      )
 
-print("Operadores soportados:")
-print("  Conjunción (∧): and")
-print("  Disyunción (∨): or")
-print("  Negación (¬): not")
-print("  Implicación (⇒): =>")
-print("Variables aceptadas: p, q")
-proposicion=input("Ingrese la proposición compuesta que desea clasificar: ")
+while proposicion == "":
+    proposicion = input("Ingrese la proposición compuesta que desea clasificar: ")
+
 if "p" and "q" in proposicion:
-    variables=2
+    variables = 2
     print(variables)
+    print("Se detectaron dos variables")
 elif "p" or "q" in proposicion:
-    variable=1
-    print(variable)
-
+    variables = 1
+    print(variables)
+    print("Se detecto una variable.")
 if "and" in proposicion:
-    if variable ==1:
+    if variables ==1:
         if "p" in proposicion:
             if "not p" in proposicion:
                 p=False
